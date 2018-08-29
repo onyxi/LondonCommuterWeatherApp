@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeekDay">
+            <connections>
+                <outlet property="amIcon" destination="nDw-X3-fVu" id="Xdp-Dq-jp2"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="iw3-lH-b1h"/>
+                <outlet property="dayNameLbl" destination="Ehe-pm-K5L" id="OmR-Tc-Qep"/>
+                <outlet property="pmIcon" destination="Yax-Zh-ZWZ" id="MHq-di-Jvu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WeekDayView">
+            <rect key="frame" x="0.0" y="0.0" width="264" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0I-TV-DFt">
+                    <rect key="frame" x="0.0" y="0.0" width="264" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehe-pm-K5L">
+                            <rect key="frame" x="8" y="15" width="106" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="106" id="G7X-Ji-Cxe"/>
+                                <constraint firstAttribute="height" constant="25" id="uM6-DC-bjv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nt_partlyCloudy" translatesAutoresizingMaskIntoConstraints="NO" id="nDw-X3-fVu">
+                            <rect key="frame" x="141" y="7" width="56" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BSi-tt-kod"/>
+                                <constraint firstAttribute="width" constant="56" id="MJy-rD-dU0"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nt_rain" translatesAutoresizingMaskIntoConstraints="NO" id="Yax-Zh-ZWZ">
+                            <rect key="frame" x="201" y="7" width="56" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="VXe-vA-VzG"/>
+                                <constraint firstAttribute="height" constant="40" id="mtt-Lf-dBf"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ehe-pm-K5L" firstAttribute="leading" secondItem="Z0I-TV-DFt" secondAttribute="leading" constant="8" id="6sf-kQ-tP7"/>
+                        <constraint firstAttribute="bottom" secondItem="Yax-Zh-ZWZ" secondAttribute="bottom" constant="7" id="Cza-Wv-5gU"/>
+                        <constraint firstItem="Yax-Zh-ZWZ" firstAttribute="top" secondItem="Z0I-TV-DFt" secondAttribute="top" constant="7" id="IUu-v4-epn"/>
+                        <constraint firstItem="Ehe-pm-K5L" firstAttribute="centerY" secondItem="Z0I-TV-DFt" secondAttribute="centerY" id="Kdq-LL-UFb"/>
+                        <constraint firstAttribute="width" constant="264" id="MBf-n5-ceL"/>
+                        <constraint firstItem="nDw-X3-fVu" firstAttribute="top" secondItem="Z0I-TV-DFt" secondAttribute="top" constant="7" id="ZQS-jA-05N"/>
+                        <constraint firstAttribute="height" constant="54" id="bFP-cw-RjP"/>
+                        <constraint firstAttribute="bottom" secondItem="nDw-X3-fVu" secondAttribute="bottom" constant="7" id="otR-Yb-hMn"/>
+                        <constraint firstAttribute="trailing" secondItem="Yax-Zh-ZWZ" secondAttribute="trailing" constant="7" id="xwb-Vk-YcP"/>
+                        <constraint firstItem="Yax-Zh-ZWZ" firstAttribute="leading" secondItem="nDw-X3-fVu" secondAttribute="trailing" constant="4" id="zqE-6u-9da"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Z0I-TV-DFt" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Kd7-Ps-RGi"/>
+                <constraint firstItem="Z0I-TV-DFt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UPr-fe-al3"/>
+                <constraint firstItem="Z0I-TV-DFt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pWo-tx-htl"/>
+                <constraint firstItem="Z0I-TV-DFt" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="wlS-EL-UUM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-64" y="-229"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nt_partlyCloudy" width="56" height="40"/>
+        <image name="nt_rain" width="90" height="55"/>
+    </resources>
+</document>

@@ -7,25 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C116F567206FFD6B007CBE6B /* AnimationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C116F566206FFD6B007CBE6B /* AnimationEngine.m */; };
 		C11AB43120619608000AB000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C11AB43020619608000AB000 /* AppDelegate.m */; };
-		C11AB43420619608000AB000 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11AB43320619608000AB000 /* ViewController.m */; };
+		C11AB43420619608000AB000 /* DayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C11AB43320619608000AB000 /* DayView.m */; };
 		C11AB43720619608000AB000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11AB43520619608000AB000 /* Main.storyboard */; };
 		C11AB43920619608000AB000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11AB43820619608000AB000 /* Assets.xcassets */; };
 		C11AB43C20619608000AB000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11AB43A20619608000AB000 /* LaunchScreen.storyboard */; };
 		C11AB43F20619608000AB000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C11AB43E20619608000AB000 /* main.m */; };
+		C11ED851206D48A500000A85 /* SettingsRoundedRect.m in Sources */ = {isa = PBXBuildFile; fileRef = C11ED850206D48A500000A85 /* SettingsRoundedRect.m */; };
+		C16A5C3C2069975B00A9E0A4 /* LocationPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16A5C3B2069975B00A9E0A4 /* LocationPickerViewController.m */; };
+		C16A5C3F2069976B00A9E0A4 /* TimePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16A5C3E2069976B00A9E0A4 /* TimePickerViewController.m */; };
+		C198C3CA2066F910001F7B59 /* WeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = C198C3C92066F910001F7B59 /* WeekView.m */; };
+		C198C3CD2066F91C001F7B59 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C198C3CC2066F91C001F7B59 /* SettingsViewController.m */; };
+		C198C3D12066FAB5001F7B59 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C198C3D02066FAB5001F7B59 /* ContainerViewController.m */; };
+		C198C3D42066FD7D001F7B59 /* AMSection.m in Sources */ = {isa = PBXBuildFile; fileRef = C198C3D32066FD7D001F7B59 /* AMSection.m */; };
+		C198C3D72066FD8B001F7B59 /* PMSection.m in Sources */ = {isa = PBXBuildFile; fileRef = C198C3D62066FD8B001F7B59 /* PMSection.m */; };
+		C1FE8BBB2071014100C24F44 /* AMSectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FE8BBA2071014100C24F44 /* AMSectionButton.m */; };
+		C1FE8BBE207109EB00C24F44 /* PMSectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FE8BBD207109EB00C24F44 /* PMSectionButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C116F565206FFD6B007CBE6B /* AnimationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationEngine.h; sourceTree = "<group>"; };
+		C116F566206FFD6B007CBE6B /* AnimationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationEngine.m; sourceTree = "<group>"; };
 		C11AB42C20619608000AB000 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11AB42F20619608000AB000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C11AB43020619608000AB000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C11AB43220619608000AB000 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C11AB43320619608000AB000 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C11AB43220619608000AB000 /* DayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayView.h; sourceTree = "<group>"; };
+		C11AB43320619608000AB000 /* DayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayView.m; sourceTree = "<group>"; };
 		C11AB43620619608000AB000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C11AB43820619608000AB000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C11AB43B20619608000AB000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C11AB43D20619608000AB000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C11AB43E20619608000AB000 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C11ED84F206D48A500000A85 /* SettingsRoundedRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsRoundedRect.h; sourceTree = "<group>"; };
+		C11ED850206D48A500000A85 /* SettingsRoundedRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsRoundedRect.m; sourceTree = "<group>"; };
+		C16A5C3A2069975B00A9E0A4 /* LocationPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationPickerViewController.h; sourceTree = "<group>"; };
+		C16A5C3B2069975B00A9E0A4 /* LocationPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationPickerViewController.m; sourceTree = "<group>"; };
+		C16A5C3D2069976B00A9E0A4 /* TimePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimePickerViewController.h; sourceTree = "<group>"; };
+		C16A5C3E2069976B00A9E0A4 /* TimePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimePickerViewController.m; sourceTree = "<group>"; };
+		C198C3C82066F910001F7B59 /* WeekView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeekView.h; sourceTree = "<group>"; };
+		C198C3C92066F910001F7B59 /* WeekView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeekView.m; sourceTree = "<group>"; };
+		C198C3CB2066F91C001F7B59 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		C198C3CC2066F91C001F7B59 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		C198C3CF2066FAB5001F7B59 /* ContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		C198C3D02066FAB5001F7B59 /* ContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		C198C3D22066FD7D001F7B59 /* AMSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMSection.h; sourceTree = "<group>"; };
+		C198C3D32066FD7D001F7B59 /* AMSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMSection.m; sourceTree = "<group>"; };
+		C198C3D52066FD8B001F7B59 /* PMSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMSection.h; sourceTree = "<group>"; };
+		C198C3D62066FD8B001F7B59 /* PMSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMSection.m; sourceTree = "<group>"; };
+		C1FE8BB92071014100C24F44 /* AMSectionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMSectionButton.h; sourceTree = "<group>"; };
+		C1FE8BBA2071014100C24F44 /* AMSectionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMSectionButton.m; sourceTree = "<group>"; };
+		C1FE8BBC207109EB00C24F44 /* PMSectionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMSectionButton.h; sourceTree = "<group>"; };
+		C1FE8BBD207109EB00C24F44 /* PMSectionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMSectionButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C116F564206FFC6E007CBE6B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C116F565206FFD6B007CBE6B /* AnimationEngine.h */,
+				C116F566206FFD6B007CBE6B /* AnimationEngine.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		C11AB42320619608000AB000 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +100,10 @@
 		C11AB42E20619608000AB000 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				C116F564206FFC6E007CBE6B /* Utilities */,
+				C11AB44520619B1E000AB000 /* View */,
 				C11AB42F20619608000AB000 /* AppDelegate.h */,
 				C11AB43020619608000AB000 /* AppDelegate.m */,
-				C11AB43220619608000AB000 /* ViewController.h */,
-				C11AB43320619608000AB000 /* ViewController.m */,
 				C11AB43520619608000AB000 /* Main.storyboard */,
 				C11AB43820619608000AB000 /* Assets.xcassets */,
 				C11AB43A20619608000AB000 /* LaunchScreen.storyboard */,
@@ -69,6 +111,83 @@
 				C11AB43E20619608000AB000 /* main.m */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		C11AB44520619B1E000AB000 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C198C3CE2066FA80001F7B59 /* MainContainer */,
+				C198C3C72066F8B6001F7B59 /* SettingsView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C16A5C392069973500A9E0A4 /* PickerViews */ = {
+			isa = PBXGroup;
+			children = (
+				C16A5C3A2069975B00A9E0A4 /* LocationPickerViewController.h */,
+				C16A5C3B2069975B00A9E0A4 /* LocationPickerViewController.m */,
+				C16A5C3D2069976B00A9E0A4 /* TimePickerViewController.h */,
+				C16A5C3E2069976B00A9E0A4 /* TimePickerViewController.m */,
+			);
+			path = PickerViews;
+			sourceTree = "<group>";
+		};
+		C198C3C52066F8AA001F7B59 /* DayView */ = {
+			isa = PBXGroup;
+			children = (
+				C198C3D82066FDEE001F7B59 /* SummarySections */,
+				C11AB43220619608000AB000 /* DayView.h */,
+				C11AB43320619608000AB000 /* DayView.m */,
+			);
+			path = DayView;
+			sourceTree = "<group>";
+		};
+		C198C3C62066F8AF001F7B59 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				C198C3C82066F910001F7B59 /* WeekView.h */,
+				C198C3C92066F910001F7B59 /* WeekView.m */,
+			);
+			path = WeekView;
+			sourceTree = "<group>";
+		};
+		C198C3C72066F8B6001F7B59 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				C16A5C392069973500A9E0A4 /* PickerViews */,
+				C198C3CB2066F91C001F7B59 /* SettingsViewController.h */,
+				C198C3CC2066F91C001F7B59 /* SettingsViewController.m */,
+				C11ED84F206D48A500000A85 /* SettingsRoundedRect.h */,
+				C11ED850206D48A500000A85 /* SettingsRoundedRect.m */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		C198C3CE2066FA80001F7B59 /* MainContainer */ = {
+			isa = PBXGroup;
+			children = (
+				C198C3C52066F8AA001F7B59 /* DayView */,
+				C198C3C62066F8AF001F7B59 /* WeekView */,
+				C198C3CF2066FAB5001F7B59 /* ContainerViewController.h */,
+				C198C3D02066FAB5001F7B59 /* ContainerViewController.m */,
+			);
+			path = MainContainer;
+			sourceTree = "<group>";
+		};
+		C198C3D82066FDEE001F7B59 /* SummarySections */ = {
+			isa = PBXGroup;
+			children = (
+				C198C3D22066FD7D001F7B59 /* AMSection.h */,
+				C198C3D32066FD7D001F7B59 /* AMSection.m */,
+				C198C3D52066FD8B001F7B59 /* PMSection.h */,
+				C198C3D62066FD8B001F7B59 /* PMSection.m */,
+				C1FE8BB92071014100C24F44 /* AMSectionButton.h */,
+				C1FE8BBA2071014100C24F44 /* AMSectionButton.m */,
+				C1FE8BBC207109EB00C24F44 /* PMSectionButton.h */,
+				C1FE8BBD207109EB00C24F44 /* PMSectionButton.m */,
+			);
+			path = SummarySections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +261,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C11AB43420619608000AB000 /* ViewController.m in Sources */,
+				C11AB43420619608000AB000 /* DayView.m in Sources */,
+				C198C3D42066FD7D001F7B59 /* AMSection.m in Sources */,
+				C1FE8BBB2071014100C24F44 /* AMSectionButton.m in Sources */,
+				C116F567206FFD6B007CBE6B /* AnimationEngine.m in Sources */,
 				C11AB43F20619608000AB000 /* main.m in Sources */,
+				C16A5C3F2069976B00A9E0A4 /* TimePickerViewController.m in Sources */,
+				C198C3CD2066F91C001F7B59 /* SettingsViewController.m in Sources */,
+				C198C3D12066FAB5001F7B59 /* ContainerViewController.m in Sources */,
+				C1FE8BBE207109EB00C24F44 /* PMSectionButton.m in Sources */,
+				C198C3D72066FD8B001F7B59 /* PMSection.m in Sources */,
+				C11ED851206D48A500000A85 /* SettingsRoundedRect.m in Sources */,
 				C11AB43120619608000AB000 /* AppDelegate.m in Sources */,
+				C198C3CA2066F910001F7B59 /* WeekView.m in Sources */,
+				C16A5C3C2069975B00A9E0A4 /* LocationPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
