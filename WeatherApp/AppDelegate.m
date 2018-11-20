@@ -15,9 +15,55 @@
 @implementation AppDelegate
 
 
+// When the app launches this method calls the 'setDefaultValuesForJourneys' method to check NSUserDefaults and set up default data values for the user's journeys if necessary
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // check for and set default values
+    [self setDefaultValuesForJourneys];
+    
     return YES;
+}
+
+// This method checks NSUserDefaults to see if values have been set for the user's journey locations and start/end times. They will be nil when the app launches for the first time, so this method sets default values, which can be updated by the user in the SettingsViewController
+-(void)setDefaultValuesForJourneys {
+    
+    // check for home location value
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"homeLocation"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setValue: @"Camden" forKey:@"homeLocation"];
+    }
+    
+    // check for work location value
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"workLocation"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setValue: @"Westminster" forKey:@"workLocation"];
+    }
+    
+    // create default date values
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier: NSCalendarIdentifierGregorian];
+    NSDate *amStart = [calendar dateBySettingHour:7 minute:30 second:0 ofDate:[NSDate date] options:0];
+    NSDate *amEnd = [calendar dateBySettingHour:8 minute:30 second:0 ofDate:[NSDate date] options:0];
+    NSDate *pmStart = [calendar dateBySettingHour:18 minute:0 second:0 ofDate:[NSDate date] options:0];
+    NSDate *pmEnd = [calendar dateBySettingHour:19 minute:0 second:0 ofDate:[NSDate date] options:0];
+    
+    // check for am journey start-time value
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"amStart"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setObject: amStart forKey: @"amStart"];
+    }
+    
+    // check for am journey end-time value
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"amEnd"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setObject: amEnd forKey:@"amEnd"];
+    }
+    
+    // check for pm journey start-time value
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"pmStart"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setObject: pmStart forKey:@"pmStart"];
+    }
+    
+    // check for pm journey end-time value
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"pmEnd"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setObject: pmEnd forKey:@"pmEnd"];
+    }
 }
 
 
